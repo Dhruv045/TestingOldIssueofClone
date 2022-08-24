@@ -259,7 +259,7 @@ def get_mega_link_type(url: str):
     return "file"
 
 def is_magnet(url: str):
-    magnet = re_findall(MAGNET_REGEX, url)
+    magnet = findall(MAGNET_REGEX, url)
     return bool(magnet)
 
 def new_thread(fn):
