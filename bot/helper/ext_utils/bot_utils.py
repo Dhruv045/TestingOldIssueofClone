@@ -232,7 +232,7 @@ def get_readable_time(seconds: int) -> str:
     return result
 
 def is_url(url: str):
-    url = re_findall(URL_REGEX, url)
+    url = findall(URL_REGEX, url)
     return bool(url)
 
 def is_gdrive_link(url: str):
